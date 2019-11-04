@@ -80,11 +80,6 @@ app.post('/user/add', function(req, res, next) {
 });
 
 // Delete User
-// app.delete('/user/delete/:id', function(req, res, next) {
-//   client.del(req.param.id);
-//   res.redirect('/')
-// })
-
 app.delete('/user/delete/:id', function(req, res, next){
   client.del(req.params.id);
   res.redirect('/');
